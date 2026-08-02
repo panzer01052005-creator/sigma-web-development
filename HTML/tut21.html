@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligment</title>
+    <link  href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        .page-wrapper {
+            max-width: 980px;
+            margin: 24px auto;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            padding: 24px;
+            border: 3px solid #9c27b0;
+            background: #f1b2b2;
+        }
+        .page-heading {
+            width: 100%;
+            text-align: center;
+            margin: 0 0 18px;
+            font-size: 2rem;
+            color: #4a148c;
+        }
+        .container-inner {
+            display: contents;
+        }
+        .item {
+            flex: 1 1 240px;
+            max-width: 300px;
+            min-width: 240px;
+            border: 3px solid #4caf81;
+            background: #fff9c4;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .item h3 {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+        .item p {
+            margin: 0;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <h1 class="page-heading">Welcome to my store</h1>
+            <div class="container-inner">
+                <div id="fruits" class="item">
+                <h3>Fruits</h3>
+                <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi reiciendis sed distinctio quas, libero esse ipsum ea aspernatur, nulla obcaecati repudiandae culpa ipsam, animi eligendi temporibus doloribus! Ea, repellat!</p>
+            </div>
+            <div id="computer" class="item">
+                <h3>Computer</h3>
+                <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi reiciendis sed distinctio quas, libero esse ipsum ea aspernatur, nulla obcaecati repudiandae culpa ipsam, animi eligendi temporibus doloribus! Ea, repellat!</p>
+            </div>
+            <div id="stationery" class="item">
+                <h3>Stationery</h3>
+                <p id="stationerypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi reiciendis sed distinctio quas, libero esse ipsum ea aspernatur, nulla obcaecati repudiandae culpa ipsam, animi eligendi temporibus doloribus! Ea, repellat!</p>
+            </div>
+            <div id="glasses" class="item">
+                <h3>Glasses</h3>
+                <p id="glassespara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi reiciendis sed distinctio quas, libero esse ipsum ea aspernatur, nulla obcaecati repudiandae culpa ipsam, animi eligendi temporibus doloribus! Ea, repellat!</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

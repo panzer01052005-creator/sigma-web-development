@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        /* // box shodow: offset-X feOffset-Y  color*/
+        /* // box shodow: offset-X feOffset-Y blur-radius spread-radius color*/
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: aquamarine;
+            /* box-shadow: 10px 13px rgb(3, 152, 105); */
+            /* box-shadow: -10px -13px rgb(3, 152, 105); */
+            box-shadow: -7px -5px 10px 4px rgb(3, 152, 105);
+        }
+        .card h2 {
+            /* text-shadow: 2px 1px rgb(15, 14, 17); */
+            /* text-shadow: 2px 1px 2px rgb(15, 14, 17); */
+            text-shadow: -2px -1px 2px rgb(15, 14, 17);
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facilis temporibus similique aliquam, eius et impedit fugiat minus officiis hic quia dicta dolore modi consectetur consequuntur est obcaecati eum, magni autem perspiciatis alias nesciunt totam!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facilis temporibus similique aliquam, eius et impedit fugiat minus officiis hic quia dicta dolore modi consectetur consequuntur est obcaecati eum, magni autem perspiciatis alias nesciunt totam!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Javascript course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facilis temporibus similique aliquam, eius et impedit fugiat minus officiis hic quia dicta dolore modi consectetur consequuntur est obcaecati eum, magni autem perspiciatis alias nesciunt totam!</p>
+        </div>
+    </div>
+</body>
+</html>

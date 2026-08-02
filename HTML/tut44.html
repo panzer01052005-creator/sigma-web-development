@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1f2937;
+            background: linear-gradient(135deg, #eef2ff, #fdf2f8, #fef3c7);
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1.2rem;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-areas:
+                'nav nav nav nav nav nav nav nav nav nav nav nav'
+                'section section section section section section section aside aside aside aside aside';
+        }
+
+        .border-now {
+            border: 1px solid rgba(15, 23, 42, 0.1);
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.88);
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            grid-area: nav;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            max-width: 1100px;
+            margin: 1.2rem auto 0;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        }
+
+        nav span {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: #2563eb;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.25s ease, background 0.25s ease;
+            cursor: pointer;
+        }
+
+        nav span:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        section h1,
+        aside h1 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        section p {
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background: linear-gradient(180deg, #e0f2fe, #fce7f3);
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside';
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (min-width: 301px) and (max-width: 500px) {
+            body {
+                background: linear-gradient(180deg, #dcfce7, #fef3c7);
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav nav nav nav nav nav nav nav nav'
+                    'section section section section section section section section section section section section'
+                    'aside aside aside aside aside aside aside aside aside aside aside aside';
+            }
+
+            nav {
+                gap: 10px;
+            }            
+        }
+
+        @media (min-width: 501px) and (max-width: 800px) {
+            body {
+                background: linear-gradient(135deg, #fff7ed, #fef9c3);
+            }
+
+            .container {
+                grid-template-areas:
+                    'nav nav nav nav nav nav nav nav nav nav nav nav'
+                    'section section section section section section aside aside aside aside aside aside';
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background: linear-gradient(135deg, #fdf2f8, #ede9fe, #e0f2fe);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>Services</span>
+        </nav>
+        <section class="border-now">
+            <h1>Welcome to my website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        </section>
+        <aside class="border-now">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="border-now">
+        <p>Copyright &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

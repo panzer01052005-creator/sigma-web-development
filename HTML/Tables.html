@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: black;
+        }
+        td, th {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Country Email</th>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>USA@gmail.com</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>In</td>
+            <td>India@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>Japan@gmail.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>Chine@gmail.com</td>
+        </tr>
+    </table>
+
+    <table style="width: 50%; color: blue;">
+        <colgroup>
+            <col span="4" style="background-color: brown;"/>
+        </colgroup>
+        <tr>
+            <th>Country</th>
+            <th>Code</th>
+            <th>capital</th>
+            <th>currency</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>91</td>
+            <td>Delhi</td>
+            <td>Rupee</td>
+        </tr>
+        <tr>
+            <td>UAE</td>
+            <td>04</td>
+            <td>Dubai</td>
+            <td>Dollar</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>1</td>
+            <td>New york</td>
+            <td>DOllar</td>
+        </tr>
+    </table>
+
+</body>
+</html>
