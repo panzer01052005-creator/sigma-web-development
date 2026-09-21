@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            background-color: red;
+        }
+        .red{
+            background-color: blue;
+        }
+        #third{
+            background-color: green;
+        }
+        div p {
+            background-color: yellow;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a:visited{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+    </div>
+
+    <div>
+        I am another div
+    </div>
+
+    <div id="third">
+        I am a third div
+    </div>
+
+    <div>
+        <p>I am a paragraph</p>
+
+        <article>
+            I am an article
+            <p>I am a paragraph inside the article</p>
+        </article>
+
+    </div>
+
+    <div>
+        <a href="https://www.google.com">I am a link</a>
+    </div>
+</body>
+</html>
