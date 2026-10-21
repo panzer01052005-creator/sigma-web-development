@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOre on CSS Selectors </title>
+    <style>
+        .box:first-child {
+            /* background-color: red;  */
+        }
+
+        .box::first-line {
+            /* color:rgb(247, 88, 9); */
+        }
+
+        .boxes * {
+            color: aqua;
+            border: 2px solid black;
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            margin-top: 45px;
+            padding: 10px;
+        }
+
+        .box::before {
+            content: "My name is Abhishek";
+            color: blue;
+        }
+
+        .box::after {
+            content: "This is sigma Development"
+
+        }
+
+        input ::placeholder {
+            color: orangered;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box"> Hey I am a box. ?</div>
+        <div class="box"> Hey I am a box.</div>
+        <div class="box"> Hey I am a box.</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
